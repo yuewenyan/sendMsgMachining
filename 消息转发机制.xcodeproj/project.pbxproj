@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA19D072068926E00C3519A /* NSObject+YYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA19D062068926E00C3519A /* NSObject+YYKVO.m */; };
 		CEDB2668205A4D3900B62ABF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2667205A4D3900B62ABF /* AppDelegate.m */; };
 		CEDB266B205A4D3900B62ABF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB266A205A4D3900B62ABF /* ViewController.m */; };
 		CEDB266E205A4D3900B62ABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB266C205A4D3900B62ABF /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA19D052068926E00C3519A /* NSObject+YYKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYKVO.h"; sourceTree = "<group>"; };
+		CEA19D062068926E00C3519A /* NSObject+YYKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYKVO.m"; sourceTree = "<group>"; };
 		CEDB2663205A4D3900B62ABF /* 消息转发机制.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "消息转发机制.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDB2666205A4D3900B62ABF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDB2667205A4D3900B62ABF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				CEDB267D205A4D6A00B62ABF /* Person.m */,
 				CEDB267F205A4D7400B62ABF /* Sport.h */,
 				CEDB2680205A4D7400B62ABF /* Sport.m */,
+				CEA19D052068926E00C3519A /* NSObject+YYKVO.h */,
+				CEA19D062068926E00C3519A /* NSObject+YYKVO.m */,
 				CEDB266C205A4D3900B62ABF /* Main.storyboard */,
 				CEDB266F205A4D3900B62ABF /* Assets.xcassets */,
 				CEDB2671205A4D3900B62ABF /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			files = (
 				CEDB266B205A4D3900B62ABF /* ViewController.m in Sources */,
 				CEDB2681205A4D7400B62ABF /* Sport.m in Sources */,
+				CEA19D072068926E00C3519A /* NSObject+YYKVO.m in Sources */,
 				CEDB2676205A4D3900B62ABF /* main.m in Sources */,
 				CEDB267E205A4D6A00B62ABF /* Person.m in Sources */,
 				CEDB2668205A4D3900B62ABF /* AppDelegate.m in Sources */,

@@ -10,6 +10,11 @@
 
 @interface Sport : NSObject
 
+@property (nonatomic, assign) NSInteger distance;
+@property (nonatomic, assign) NSInteger time;
+
+@property (nonatomic, copy)   NSString * ttt;
+
 - (void)eat;
 
 @end

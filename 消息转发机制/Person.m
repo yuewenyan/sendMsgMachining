@@ -26,6 +26,7 @@
 
 /**
  1.重写父类的动态方法解析 - 此处测试用的对象方法 （类方法为 + (BOOL)resolveClassMethod:(SEL)sel 可以自己试）
+ 类方法时 用 + (BOOL)resolveClassMethod:(SEL)sel {}
  */
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     
@@ -131,5 +132,7 @@ void myRun(id self, SEL _cmd)
 
     [window.rootViewController presentViewController:alertC animated:YES completion:nil];
 }
+
+
 
 @end

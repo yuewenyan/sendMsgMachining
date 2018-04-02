@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Sport.h"
+#import "NSObject+YYKVO.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) Sport * sp;
 
 @end
 
@@ -18,7 +22,32 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+//    观察者kvo
+    
+    self.sp = [[Sport alloc] init];
+    
+//    [sp addObserver:self forKeyPath:@"time" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+
+//    设置可以观察某个值 - 建议写到setter方法中
+//    [sp willChangeValueForKey:@"time"];
+    self.sp.time = 100;
+    self.sp.ttt = @"dddd";
+//    [sp didChangeValueForKey:@"time"];
+    
+    
+    [self.sp yy_addObserver:self forKeyPath:@"ttt" block:^(id observer, NSString *keyPath, id newValue, id oldValue) {
+
+        NSLog(@"%@   %@", newValue, oldValue);
+    }];
+    self.sp.ttt = @"eeeee";    
 }
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    NSLog(@"%@", change);
+}
+
 
 - (IBAction)sendMessage:(id)sender {
     
